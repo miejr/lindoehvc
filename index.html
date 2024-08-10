@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você ainda me ama?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #352210; /* Fundo Marrom Profundo */
+            color: #D18C61; /* Texto Laranja Claro */
+        }
+        .container {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #A96944; /* Botões em Marrom Médio Claro */
+            color: #352210; /* Texto dos botões em Marrom Profundo */
+            border: none;
+            border-radius: 5px;
+        }
+        #message {
+            display: none;
+            margin-top: 20px;
+            color: #D18C61; /* Mensagem em Laranja Claro */
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #7A5436; /* Fundo da mensagem em Marrom Médio */
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Você ainda me ama?</h1>
+    <button onclick="yes()">Sim</button>
+    <button onclick="no()">Não</button>
+    <div id="message">Vagabundo</div>
+</div>
+
+<script>
+    function yes() {
+        window.location.href = "https://open.spotify.com/playlist/6j78GEq9BG3FQzFEb6hB3y";
+    }
+
+    function no() {
+        document.getElementById("message").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
